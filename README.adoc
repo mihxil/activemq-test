@@ -1,0 +1,4 @@
+= Activemq testing
+
+@B&G we are connection to MQ very low level (no spring-jms or camel-jms or so). I was a bit confused about the intricacies of the connection and session and delaying and that kind of stuff, so I try it out in a simplified environment.
+
