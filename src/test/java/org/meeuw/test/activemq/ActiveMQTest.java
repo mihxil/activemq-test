@@ -23,7 +23,7 @@ public class ActiveMQTest {
 
 
     @Container
-    static ActiveMQContainer activemq = new ActiveMQContainer("apache/activemq-classic:5.18.3")
+    static ActiveMQContainer activemq = new ActiveMQContainer("apache/activemq-classic:6.1.6")
         .withCopyFileToContainer(MountableFile.forClasspathResource("/activemq.xml"), "/opt/apache-activemq/conf/activemq.xml");
 
 
@@ -32,7 +32,7 @@ public class ActiveMQTest {
 
     static Connection amqConnection;
 
-    private Duration delay = Duration.ofSeconds(10);
+    private final Duration delay = Duration.ofSeconds(10);
     @BeforeAll
     public static void setUp() throws JMSException {
         ActiveMQConnectionFactory amqConnectionFactory = new ActiveMQConnectionFactory(activemq.getBrokerUrl());
