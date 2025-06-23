@@ -2,7 +2,7 @@
 <Configuration status="info">
   <Appenders>
     <Console name="Console" target="SYSTEM_OUT">
-      <PatternLayout pattern="%d{ISO8601} %-5level %c{1} - %m%n" charset="UTF-8"/>
+      <PatternLayout pattern="%d{ISO8601} %t %-5level %c{1} - %m%n" charset="UTF-8"/>
     </Console>
   </Appenders>
   <Loggers>
